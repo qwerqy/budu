@@ -5,9 +5,13 @@
   "version": "0.1.0",
   "author": "Kyle Mathews <mathews.kyle@gmail.com>",
   "dependencies": {
+    "@material-ui/core": "^4.2.0",
+    "@material-ui/icons": "^4.2.1",
+    "@material-ui/styles": "^4.2.0",
     "gatsby": "^2.13.6",
     "gatsby-image": "^2.2.4",
     "gatsby-plugin-manifest": "^2.2.1",
+    "gatsby-plugin-material-ui": "^2.1.4",
     "gatsby-plugin-offline": "^2.2.1",
     "gatsby-plugin-react-helmet": "^3.1.0",
     "gatsby-plugin-sharp": "^2.2.3",
@@ -16,7 +20,9 @@
     "prop-types": "^15.7.2",
     "react": "^16.8.6",
     "react-dom": "^16.8.6",
-    "react-helmet": "^5.2.1"
+    "react-helmet": "^5.2.1",
+    "styled-components": "^4.3.2",
+    "typeface-roboto": "0.0.54"
   },
   "devDependencies": {
     "prettier": "^1.18.2"
