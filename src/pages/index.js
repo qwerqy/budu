@@ -1,15 +1,14 @@
 import React from "react"
-import { Link } from "gatsby"
 
 import Layout from "../components/layout"
-import Image from "../components/image"
 import SEO from "../components/seo"
-import { Jumbo } from "../components/jumbo"
-
+import Jumbo from "../components/jumbo"
+import Social from "../components/social_link"
 const IndexPage = () => (
   <Layout>
     <SEO title="Home" />
     <Jumbo />
+    <Social />
   </Layout>
 )
 
