@@ -12,6 +12,22 @@ import "typeface-roboto"
 
 import Header from "./header"
 import "./layout.css"
+import { Typography, Grid } from "@material-ui/core"
+
+const footerItems = [
+  {
+    title: "Twitter",
+    url: "https://twitter.com/aminroslan__",
+  },
+  {
+    title: "Github",
+    url: "https://github.com/qwerqy",
+  },
+  {
+    title: "Site Source",
+    url: "https://github.com/qwerqy/budu",
+  },
+]
 
 const Layout = ({ children }) => {
   const data = useStaticQuery(graphql`
@@ -36,12 +52,36 @@ const Layout = ({ children }) => {
         }}
       >
         <main>{children}</main>
-        <footer>
-          © {new Date().getFullYear()}, Built with
-          {` `}
-          <a href="https://www.gatsbyjs.org">Gatsby</a>
-        </footer>
       </div>
+      <footer>
+        <Grid
+          container
+          direction="row"
+          justify="center"
+          alignItems="center"
+          spacing={2}
+        >
+          {footerItems.map((item, i) => {
+            return (
+              <Grid item>
+                <Typography align="center" variant={"body2"}>
+                  <a
+                    href={item.url}
+                    style={{
+                      color: `grey`,
+                      textDecoration: `none`,
+                    }}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+                    {item.title}
+                  </a>
+                </Typography>
+              </Grid>
+            )
+          })}
+        </Grid>
+      </footer>
     </>
   )
 }

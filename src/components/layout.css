@@ -14,7 +14,6 @@ aside,
 details,
 figcaption,
 figure,
-footer,
 header,
 main,
 menu,
@@ -620,4 +619,15 @@ pre tt:after {
   html {
     font-size: 100%;
   }
+}
+
+footer {
+  color: grey;
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  bottom: 0;
+  width: 100vw;
+  overflow: hidden;
+  padding-bottom: 1rem;
 }

@@ -1,14 +1,12 @@
 import { Link } from "gatsby"
 import PropTypes from "prop-types"
 import React from "react"
-import blueGrey from "@material-ui/core/colors/blueGrey"
 import Typography from "@material-ui/core/Typography"
 import Grid from "@material-ui/core/Grid"
 
 const Header = ({ siteTitle }) => (
   <header
     style={{
-      background: blueGrey[900],
       marginBottom: `1.45rem`,
     }}
   >
@@ -26,11 +24,12 @@ const Header = ({ siteTitle }) => (
         alignItems="center"
       >
         <Grid item xs3>
-          <Typography align="center" variant={"h5"}>
+          <Typography align="center" variant={"h6"}>
             <Link
               to="/"
               style={{
-                color: `white`,
+                color: `black`,
+                fontWeight: "bold",
                 textDecoration: `none`,
               }}
             >
@@ -45,7 +44,7 @@ const Header = ({ siteTitle }) => (
                 <Link
                   to="/"
                   style={{
-                    color: `white`,
+                    color: `black`,
                     textDecoration: `none`,
                   }}
                 >
@@ -58,11 +57,11 @@ const Header = ({ siteTitle }) => (
                 <Link
                   to="/"
                   style={{
-                    color: `white`,
+                    color: `black`,
                     textDecoration: `none`,
                   }}
                 >
-                  Work
+                  Contact
                 </Link>
               </Typography>
             </Grid>
