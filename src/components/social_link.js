@@ -2,8 +2,9 @@ import React from "react"
 import { TwitterFollowButton } from "react-twitter-embed"
 import GitHubButton from "react-github-btn"
 import { Grid } from "@material-ui/core"
+import withWidth from "@material-ui/core/withWidth"
 
-const SocialLink = () => {
+const SocialLink = props => {
   return (
     <Grid
       style={{ marginTop: "1rem" }}
@@ -16,13 +17,17 @@ const SocialLink = () => {
       <Grid item>
         <TwitterFollowButton
           screenName={"aminroslan__"}
-          options={{ showScreenName: "false", size: "large" }}
+          options={{
+            showScreenName: "false",
+            size: "large",
+            showCount: props.width === "xs" ? "false" : "true",
+          }}
         />
       </Grid>
       <Grid item>
         <GitHubButton
           href="https://github.com/qwerqy"
-          data-show-count="true"
+          data-show-count={props.width === "xs" ? "false" : "true"}
           data-text="Follow"
           data-size="large"
           aria-label="Follow @qwerqy on GitHub"
@@ -34,4 +39,4 @@ const SocialLink = () => {
   )
 }
 
-export default SocialLink
+export default withWidth()(SocialLink)

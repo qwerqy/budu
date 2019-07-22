@@ -1,5 +1,12 @@
 import React from "react"
-import { Typography, Box, List, ListItem, Grid } from "@material-ui/core"
+import {
+  Typography,
+  Box,
+  List,
+  ListItem,
+  Grid,
+  Hidden,
+} from "@material-ui/core"
 import GitHubButton from "react-github-btn"
 
 const acceptedProjects = [
@@ -36,59 +43,61 @@ const OSP = () => {
 
   return (
     <div>
-      <Typography variant="h5">
+      <Typography component="div" variant="h5">
         <Box fontWeight="fontWeightBold">Open Source Projects</Box>
       </Typography>
       <List>
-        {projects.map(project => {
+        {projects.map((project, i) => {
           return (
-            <>
-              <ListItem
-                key={project.id}
-                style={{ marginTop: 2, marginBottom: 2, paddingLeft: 0 }}
-              >
-                <Grid container direction="row">
-                  <Grid
-                    item
-                    xs={2}
-                    alignItems="center"
-                    style={{ display: "flex" }}
-                  >
-                    <Typography>
-                      <Box fontWeight="fontWeightBold">
-                        {capitalizeFirstLetter(project.name)}
-                      </Box>
-                    </Typography>
-                  </Grid>
+            <ListItem
+              key={i}
+              style={{ marginTop: 2, marginBottom: 2, paddingLeft: 0 }}
+            >
+              <Grid container direction="row">
+                <Grid
+                  item
+                  sm={3}
+                  xs={6}
+                  style={{ display: "flex", alignItems: "center" }}
+                >
+                  <Typography component="div" variant="body1">
+                    <Box fontWeight="fontWeightBold">
+                      {capitalizeFirstLetter(project.name)}
+                    </Box>
+                  </Typography>
+                </Grid>
+                <Hidden xsDown>
                   <Grid
                     item
                     xs={5}
-                    alignItems="center"
-                    style={{ display: "flex", marginRight: "1rem" }}
+                    style={{
+                      display: "flex",
+                      marginRight: "1rem",
+                      alignItems: "center",
+                    }}
                   >
-                    <Typography>
+                    <Typography component="div" variant="body1">
                       <Box fontWeight="fontWeightLight">
                         {project.description}
                       </Box>
                     </Typography>
                   </Grid>
-                  <Grid
-                    item
-                    xs={3}
-                    alignItems="center"
-                    style={{ display: "flex" }}
+                </Hidden>
+                <Grid
+                  item
+                  xs={3}
+                  style={{ display: "flex", alignItems: "center" }}
+                >
+                  <GitHubButton
+                    href={`https://github.com/qwerqy/${project.name}`}
+                    data-size="large"
+                    aria-label={`View ${project.name} source code`}
                   >
-                    <GitHubButton
-                      href={`https://github.com/qwerqy/${project.name}`}
-                      data-size="large"
-                      aria-label={`View ${project.name} source code`}
-                    >
-                      Source Code
-                    </GitHubButton>
-                  </Grid>
+                    Source Code
+                  </GitHubButton>
                 </Grid>
-              </ListItem>
-            </>
+              </Grid>
+            </ListItem>
           )
         })}
       </List>

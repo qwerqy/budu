@@ -4,10 +4,10 @@ import { Typography, Box } from "@material-ui/core"
 const Jumbo = () => {
   return (
     <div>
-      <Typography variant="h4" style={{ marginBottom: "1rem" }}>
+      <Typography component="div" variant="h4" style={{ marginBottom: "1rem" }}>
         <Box fontWeight="fontWeightBold">Hello, I'm Amin.</Box>
       </Typography>
-      <Typography variant="body1">
+      <Typography component="div" variant="body1">
         <Box>
           I am a software engineer and I specialize in writing solutions with
           Javascript & Dart.

@@ -23,7 +23,7 @@ const Header = ({ siteTitle }) => (
         justify="space-between"
         alignItems="center"
       >
-        <Grid item xs3>
+        <Grid item>
           <Typography align="center" variant={"h6"}>
             <Link
               to="/"
@@ -37,8 +37,8 @@ const Header = ({ siteTitle }) => (
             </Link>
           </Typography>
         </Grid>
-        <Grid item xs3>
-          <Grid container direction="row" spacing="2">
+        <Grid item>
+          <Grid container direction="row" spacing={2}>
             <Grid item xs>
               <Typography align="center" variant={"body2"}>
                 <Link

@@ -63,7 +63,7 @@ const Layout = ({ children }) => {
         >
           {footerItems.map((item, i) => {
             return (
-              <Grid item>
+              <Grid item key={i}>
                 <Typography align="center" variant={"body2"}>
                   <a
                     href={item.url}
