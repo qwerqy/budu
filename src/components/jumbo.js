@@ -12,10 +12,7 @@ const Jumbo = () => {
           I am a software engineer and I specialize in writing solutions with
           Javascript & Dart.
         </Box>
-        <Box>
-          I am currently leading a team of software engineers that are working
-          on a product for my company. I am also a hardcore gamer.
-        </Box>
+        <Box>I am also a hardcore gamer.</Box>
       </Typography>
     </div>
   )

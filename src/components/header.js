@@ -42,7 +42,7 @@ const Header = ({ siteTitle }) => (
             <Grid item xs>
               <Typography align="center" variant={"body2"}>
                 <Link
-                  to="/"
+                  to="/about"
                   style={{
                     color: `black`,
                     textDecoration: `none`,
@@ -55,7 +55,7 @@ const Header = ({ siteTitle }) => (
             <Grid item xs>
               <Typography align="center" variant={"body2"}>
                 <Link
-                  to="/"
+                  to="/contact"
                   style={{
                     color: `black`,
                     textDecoration: `none`,
