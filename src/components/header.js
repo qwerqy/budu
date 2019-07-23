@@ -52,7 +52,7 @@ const Header = ({ siteTitle }) => (
                 </Link>
               </Typography>
             </Grid>
-            <Grid item xs>
+            {/* <Grid item xs>
               <Typography align="center" variant={"body2"}>
                 <Link
                   to="/contact"
@@ -64,7 +64,7 @@ const Header = ({ siteTitle }) => (
                   Contact
                 </Link>
               </Typography>
-            </Grid>
+            </Grid> */}
           </Grid>
         </Grid>
       </Grid>
