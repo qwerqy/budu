@@ -158,7 +158,10 @@ const About = () => {
                   <ListItemText>
                     <Typography component="div" variant="body1">
                       <Box>
-                        {equipment.title}: <b>{equipment.value}</b>
+                        {equipment.title}:{" "}
+                        <span style={{ color: "#d81b60", fontWeight: "bold" }}>
+                          {equipment.value}
+                        </span>
                       </Box>
                     </Typography>
                   </ListItemText>

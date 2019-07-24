@@ -6,6 +6,7 @@ import {
   ListItem,
   Grid,
   Hidden,
+  Button,
 } from "@material-ui/core"
 import GitHubButton from "react-github-btn"
 import { fetchGithubRepo, capitalizeFirstLetter } from "../utils"
@@ -79,13 +80,37 @@ const OSP = () => {
                   xs={3}
                   style={{ display: "flex", alignItems: "center" }}
                 >
-                  <GitHubButton
-                    href={`https://github.com/qwerqy/${project.name}`}
-                    data-size="large"
-                    aria-label={`View ${project.name} source code`}
+                  <Grid
+                    container
+                    direction="row"
+                    spacing={2}
+                    alignItems="center"
                   >
-                    Source Code
-                  </GitHubButton>
+                    <Grid item>
+                      <GitHubButton
+                        href={`https://github.com/qwerqy/${project.name}`}
+                        // data-size="large"
+                        aria-label={`View ${project.name} source code`}
+                      >
+                        Source Code
+                      </GitHubButton>
+                    </Grid>
+                    <Grid>
+                      {project.homepage && (
+                        <Button
+                          className="live-button"
+                          href={project.homepage}
+                          target="_blank"
+                          variant="contained"
+                          size="small"
+                          variant="text"
+                          color="secondary"
+                        >
+                          Live
+                        </Button>
+                      )}
+                    </Grid>
+                  </Grid>
                 </Grid>
               </Grid>
             </ListItem>

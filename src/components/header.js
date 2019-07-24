@@ -27,14 +27,7 @@ const Header = ({ siteTitle }) => (
         <Grid item>
           <Grid container direction="row" alignItems="center" spacing={2}>
             <Grid item>
-              <Link
-                to="/"
-                style={{
-                  color: `black`,
-                  fontWeight: "bold",
-                  textDecoration: `none`,
-                }}
-              >
+              <Link to="/">
                 <img src={logo} width="50" alt="site logo" />
               </Link>
             </Grid>
@@ -42,6 +35,7 @@ const Header = ({ siteTitle }) => (
               <Hidden xsDown>
                 <Typography align="left" variant={"h6"}>
                   <Link
+                    className="site-title"
                     to="/"
                     style={{
                       color: `black`,
@@ -61,6 +55,7 @@ const Header = ({ siteTitle }) => (
             <Grid item xs>
               <Typography align="center" variant={"body2"}>
                 <Link
+                  className="site-menu"
                   to="/about"
                   style={{
                     color: `black`,

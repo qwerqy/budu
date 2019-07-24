@@ -67,6 +67,7 @@ const Layout = ({ children }) => {
                 <Typography align="center" variant={"body2"}>
                   <a
                     href={item.url}
+                    className="footer-item"
                     style={{
                       color: `grey`,
                       textDecoration: `none`,

@@ -2,12 +2,12 @@ html {
   font-family: sans-serif;
   -ms-text-size-adjust: 100%;
   -webkit-text-size-adjust: 100%;
-  background-color: #fff;
 }
 body {
   margin: 0;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  background-color: #fff;
 }
 article,
 aside,
@@ -39,9 +39,10 @@ progress {
 template {
   display: none;
 }
-a {
+a:not(.site-title):not(.site-menu):not(.footer-item):not(.live-button) {
   background-color: transparent;
   -webkit-text-decoration-skip: objects;
+  color: #2196f3 !important;
 }
 a:active,
 a:hover {
