@@ -6,6 +6,7 @@ import Jumbo from "../components/jumbo"
 import Social from "../components/social_link"
 import OSP from "../components/open_source_projects"
 import MainList from "../components/main_list"
+import CSP from "../components/close_source_projects"
 const speakingList = [
   {
     title: "Implementing Server Side Rendering logic to a CRA production app",
@@ -20,6 +21,7 @@ const IndexPage = () => (
     <SEO title="Home" />
     <Jumbo />
     <Social />
+    <CSP />
     <OSP />
     <MainList title="Speaking" list={speakingList} />
   </Layout>

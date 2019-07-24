@@ -8,6 +8,7 @@ import {
   Hidden,
 } from "@material-ui/core"
 import GitHubButton from "react-github-btn"
+import { fetchGithubRepo, capitalizeFirstLetter } from "../utils"
 
 const acceptedProjects = [
   "budu",
@@ -16,16 +17,6 @@ const acceptedProjects = [
   "thoughtlog",
   "basiccalculator",
 ]
-
-const fetchGithubRepo = async url => {
-  const res = await fetch(url)
-  const json = await res.json()
-  return json
-}
-
-const capitalizeFirstLetter = sentence => {
-  return sentence.charAt(0).toUpperCase() + sentence.slice(1)
-}
 
 const OSP = () => {
   const [projects, setProjects] = React.useState([])

@@ -21,11 +21,23 @@ const MainList = props => {
                 button
                 key={i}
                 style={{ marginTop: 2, marginBottom: 2, paddingLeft: 2 }}
-                onClick={() => window.open(item.url, "_blank")}
+                onClick={() =>
+                  window.open(
+                    props.github
+                      ? `https://github.com/qwerqy/${item.name}`
+                      : item.url || "/"
+                  )
+                }
               >
                 <ListItemText
-                  primary={item.title}
-                  secondary={`${item.event}, ${item.date}`}
+                  primary={props.github ? item.name : item.title}
+                  secondary={
+                    props.github
+                      ? ""
+                      : item.event && item.date
+                      ? `${item.event}, ${item.date}`
+                      : item.secondary
+                  }
                 />
               </ListItem>
             )

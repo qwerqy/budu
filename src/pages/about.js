@@ -124,9 +124,9 @@ const About = () => {
               <Box fontWeight="fontWeightBold">Contact Me</Box>
             </Typography>
             <List>
-              {contacts.map(contact => {
+              {contacts.map((contact, i) => {
                 return (
-                  <ListItem disableGutters dense style={{ margin: 0 }}>
+                  <ListItem key={i} disableGutters dense style={{ margin: 0 }}>
                     <ListItemText>
                       <Typography component="div" variant="body1">
                         <Box>
@@ -152,9 +152,9 @@ const About = () => {
             <Box fontWeight="fontWeightBold">What I use</Box>
           </Typography>
           <List>
-            {equipments.map(equipment => {
+            {equipments.map((equipment, i) => {
               return (
-                <ListItem disableGutters dense style={{ margin: 0 }}>
+                <ListItem key={i} disableGutters dense style={{ margin: 0 }}>
                   <ListItemText>
                     <Typography component="div" variant="body1">
                       <Box>

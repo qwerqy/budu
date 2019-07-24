@@ -3,7 +3,8 @@ import PropTypes from "prop-types"
 import React from "react"
 import Typography from "@material-ui/core/Typography"
 import Grid from "@material-ui/core/Grid"
-
+import logo from "../static/logo.png"
+import { Hidden } from "@material-ui/core"
 const Header = ({ siteTitle }) => (
   <header
     style={{
@@ -24,18 +25,36 @@ const Header = ({ siteTitle }) => (
         alignItems="center"
       >
         <Grid item>
-          <Typography align="center" variant={"h6"}>
-            <Link
-              to="/"
-              style={{
-                color: `black`,
-                fontWeight: "bold",
-                textDecoration: `none`,
-              }}
-            >
-              {siteTitle}
-            </Link>
-          </Typography>
+          <Grid container direction="row" alignItems="center" spacing={2}>
+            <Grid item>
+              <Link
+                to="/"
+                style={{
+                  color: `black`,
+                  fontWeight: "bold",
+                  textDecoration: `none`,
+                }}
+              >
+                <img src={logo} width="50" alt="site logo" />
+              </Link>
+            </Grid>
+            <Grid item>
+              <Hidden xsDown>
+                <Typography align="left" variant={"h6"}>
+                  <Link
+                    to="/"
+                    style={{
+                      color: `black`,
+                      fontWeight: "bold",
+                      textDecoration: `none`,
+                    }}
+                  >
+                    {siteTitle}
+                  </Link>
+                </Typography>
+              </Hidden>
+            </Grid>
+          </Grid>
         </Grid>
         <Grid item>
           <Grid container direction="row" spacing={2}>
