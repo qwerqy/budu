@@ -51,8 +51,8 @@ const Header = ({ siteTitle }) => (
           </Grid>
         </Grid>
         <Grid item>
-          <Grid container direction="row" spacing={2}>
-            <Grid item xs>
+          <Grid container direction="row">
+            <Grid item>
               <Typography align="center" variant={"body2"}>
                 <Link
                   className="site-menu"
@@ -60,6 +60,7 @@ const Header = ({ siteTitle }) => (
                   style={{
                     color: `black`,
                     textDecoration: `none`,
+                    // padding: "1rem",
                   }}
                 >
                   About
