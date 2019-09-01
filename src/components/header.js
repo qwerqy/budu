@@ -51,7 +51,7 @@ const Header = ({ siteTitle }) => (
           </Grid>
         </Grid>
         <Grid item>
-          <Grid container direction="row">
+          <Grid container direction="row" spacing={2}>
             <Grid item>
               <Typography align="center" variant={"body2"}>
                 <Link
@@ -67,19 +67,21 @@ const Header = ({ siteTitle }) => (
                 </Link>
               </Typography>
             </Grid>
-            {/* <Grid item xs>
+            <Grid item xs>
               <Typography align="center" variant={"body2"}>
-                <Link
-                  to="/contact"
+                <a
+                  className="site-menu"
+                  href="https://qwerqy.dev"
                   style={{
                     color: `black`,
                     textDecoration: `none`,
                   }}
+                  target="_blank"
                 >
-                  Contact
-                </Link>
+                  Dev Blog
+                </a>
               </Typography>
-            </Grid> */}
+            </Grid>
           </Grid>
         </Grid>
       </Grid>

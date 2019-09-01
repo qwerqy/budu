@@ -1,5 +1,5 @@
 {
-  "name": "gatsby-starter-default",
+  "name": "budu",
   "private": true,
   "description": "Online portfolio",
   "version": "0.1.0",
@@ -40,12 +40,5 @@
     "start": "npm run develop",
     "serve": "gatsby serve",
     "test": "echo \"Write tests! -> https://gatsby.dev/unit-testing\""
-  },
-  "repository": {
-    "type": "git",
-    "url": "https://github.com/gatsbyjs/gatsby-starter-default"
-  },
-  "bugs": {
-    "url": "https://github.com/gatsbyjs/gatsby/issues"
   }
 }
