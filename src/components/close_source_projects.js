@@ -6,6 +6,12 @@ const projects = [
     title: "Battlev",
     secondary: "A Discord bot with an interface web app built with Nuxt",
   },
+  {
+    title: "Kountr",
+    secondary:
+      "A counter app that can be hosted by a host and create a shareable link for people to join.",
+    url: "https://kountr.now.sh/",
+  },
 ]
 
 const CSP = () => {

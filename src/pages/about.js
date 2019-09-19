@@ -107,45 +107,43 @@ const About = () => {
             </Box>
           </Typography>
         </Grid>
+        <Grid item container justify="center" alignItems="center">
+          <Avatar
+            alt="My Picture"
+            src={image}
+            style={{
+              width: "100%",
+              height: "100%",
+              margin: "4rem",
+            }}
+          />
+        </Grid>
         <Grid item>
-          <Grid container justify="center" alignItems="center">
-            <Avatar
-              alt="My Picture"
-              src={image}
-              style={{
-                width: "100%",
-                height: "100%",
-                margin: "4rem",
-              }}
-            />
-          </Grid>
-          <div>
-            <Typography component="div" variant="h5">
-              <Box fontWeight="fontWeightBold">Contact Me</Box>
-            </Typography>
-            <List>
-              {contacts.map((contact, i) => {
-                return (
-                  <ListItem key={i} disableGutters dense style={{ margin: 0 }}>
-                    <ListItemText>
-                      <Typography component="div" variant="body1">
-                        <Box>
-                          {contact.title}:{" "}
-                          <Link
-                            style={{ fontWeight: "bold" }}
-                            href={contact.url}
-                            target="_blank"
-                          >
-                            {contact.value}
-                          </Link>
-                        </Box>
-                      </Typography>
-                    </ListItemText>
-                  </ListItem>
-                )
-              })}
-            </List>
-          </div>
+          <Typography component="div" variant="h5">
+            <Box fontWeight="fontWeightBold">Contact Me</Box>
+          </Typography>
+          <List>
+            {contacts.map((contact, i) => {
+              return (
+                <ListItem key={i} disableGutters dense style={{ margin: 0 }}>
+                  <ListItemText>
+                    <Typography component="div" variant="body1">
+                      <Box>
+                        {contact.title}:{" "}
+                        <Link
+                          style={{ fontWeight: "bold" }}
+                          href={contact.url}
+                          target="_blank"
+                        >
+                          {contact.value}
+                        </Link>
+                      </Box>
+                    </Typography>
+                  </ListItemText>
+                </ListItem>
+              )
+            })}
+          </List>
         </Grid>
         <Grid item>
           <Typography component="div" variant="h5">
