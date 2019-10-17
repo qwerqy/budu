@@ -3,8 +3,9 @@ import MainList from "./main_list"
 
 const projects = [
   {
-    title: "Battlev",
-    secondary: "A Discord bot with an interface web app built with Nuxt",
+    title: "tehBot",
+    secondary: "A Discord bot with an interface web app built with React",
+    url: "https://develop.d2bfghe754xkas.amplifyapp.com/",
   },
   {
     title: "Kountr",

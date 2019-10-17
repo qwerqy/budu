@@ -9,6 +9,12 @@ import MainList from "../components/main_list"
 import CSP from "../components/close_source_projects"
 const speakingList = [
   {
+    title: "Porting my Discord bot project into AWS Ecosystem",
+    event: "AWS Usergroup meetup October 2019",
+    date: "17 October 2019",
+    url: "https://www.facebook.com/ab00d.sy/videos/2552608901471621/",
+  },
+  {
     title: "Why You Should Learn To Code?",
     event: "Next Academy Live Q&A Webinar",
     date: "19 September 2019",
