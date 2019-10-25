@@ -3,9 +3,9 @@ import MainList from "./main_list"
 
 const projects = [
   {
-    title: "tehBot",
+    title: "Turbot (Staging)",
     secondary: "A Discord bot with an interface web app built with React",
-    url: "https://develop.d2bfghe754xkas.amplifyapp.com/",
+    url: "https://staging.turbot.wtf/",
     thumbnail:
       "https://image.thum.io/get/width/200/https://develop.d2bfghe754xkas.amplifyapp.com/",
   },
