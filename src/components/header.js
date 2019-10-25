@@ -78,7 +78,7 @@ const Header = ({ siteTitle }) => (
                   }}
                   target="_blank"
                 >
-                  Dev Blog
+                  Blog
                 </a>
               </Typography>
             </Grid>

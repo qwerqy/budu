@@ -17,6 +17,7 @@ const acceptedProjects = [
   "jobcrop",
   "thoughtlog",
   "basiccalculator",
+  "discord-cognito-openid-wrapper",
 ]
 
 const OSP = () => {
@@ -36,7 +37,7 @@ const OSP = () => {
   return (
     <div>
       <Typography component="div" variant="h5">
-        <Box fontWeight="fontWeightBold">Open Source Projects</Box>
+        <Box fontWeight="fontWeightBold">Projects</Box>
       </Typography>
       <List>
         {projects.map((project, i) => {
@@ -53,7 +54,7 @@ const OSP = () => {
                   style={{ display: "flex", alignItems: "center" }}
                 >
                   <Typography component="div" variant="body1">
-                    <Box fontWeight="fontWeightBold">
+                    <Box fontWeight="">
                       {capitalizeFirstLetter(project.name)}
                     </Box>
                   </Typography>

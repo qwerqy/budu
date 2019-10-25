@@ -5,7 +5,10 @@ import {
   List,
   ListItem,
   ListItemText,
+  ListItemAvatar,
 } from "@material-ui/core"
+import withWidth from "@material-ui/core/withWidth"
+
 const MainList = props => {
   return (
     <div>
@@ -17,7 +20,7 @@ const MainList = props => {
           props.list.map((item, i) => {
             return (
               <ListItem
-                disableGutters
+                // disableGutters
                 button
                 key={i}
                 style={{ marginTop: 2, marginBottom: 2, paddingLeft: 2 }}
@@ -29,6 +32,15 @@ const MainList = props => {
                   )
                 }
               >
+                {item.thumbnail && (
+                  <ListItemAvatar style={{ marginRight: "1rem" }}>
+                    <img
+                      src={item.thumbnail}
+                      width={props.width === "xs" ? "100" : "200"}
+                      style={{ borderRadius: "15%" }}
+                    />
+                  </ListItemAvatar>
+                )}
                 <ListItemText
                   primary={props.github ? item.name : item.title}
                   secondary={
@@ -47,4 +59,4 @@ const MainList = props => {
   )
 }
 
-export default MainList
+export default withWidth()(MainList)

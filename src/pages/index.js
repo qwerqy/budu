@@ -6,7 +6,7 @@ import Jumbo from "../components/jumbo"
 import Social from "../components/social_link"
 import OSP from "../components/open_source_projects"
 import MainList from "../components/main_list"
-import CSP from "../components/close_source_projects"
+import Apps from "../components/Apps"
 const speakingList = [
   {
     title: "Porting my Discord bot project into AWS Ecosystem",
@@ -34,7 +34,7 @@ const IndexPage = () => (
     <SEO title="Home" />
     <Jumbo />
     <Social />
-    <CSP />
+    <Apps />
     <OSP />
     <MainList title="Speaking" list={speakingList} />
   </Layout>

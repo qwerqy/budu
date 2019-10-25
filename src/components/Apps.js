@@ -6,16 +6,19 @@ const projects = [
     title: "tehBot",
     secondary: "A Discord bot with an interface web app built with React",
     url: "https://develop.d2bfghe754xkas.amplifyapp.com/",
+    thumbnail:
+      "https://image.thum.io/get/width/200/https://develop.d2bfghe754xkas.amplifyapp.com/",
   },
   {
     title: "Kountr",
     secondary:
       "A counter app that can be hosted by a host and create a shareable link for people to join.",
     url: "https://kountr.now.sh/",
+    thumbnail: "https://image.thum.io/get/width/200/https://kountr.now.sh",
   },
 ]
 
-const CSP = () => {
+const Apps = () => {
   // const [projects, setProjects] = React.useState([])
 
   // React.useEffect(() => {
@@ -30,7 +33,7 @@ const CSP = () => {
   //   })
   // }, [])
 
-  return <MainList title="Close Source Projects" list={projects} />
+  return <MainList title="Apps" list={projects} />
 }
 
-export default CSP
+export default Apps
