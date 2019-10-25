@@ -18,73 +18,78 @@ const Header = ({ siteTitle }) => (
         padding: `0.8rem 1.0875rem`,
       }}
     >
-      <Grid
-        container
-        direction="row"
-        justify="space-between"
-        alignItems="center"
+      <div
+        style={{
+          display: "flex",
+          flexDirection: "row",
+          justifyContent: "space-between",
+          alignItems: "center",
+        }}
       >
-        <Grid item>
-          <Grid container direction="row" alignItems="center" spacing={2}>
-            <Grid item>
-              <Link to="/">
-                <img src={logo} width="50" alt="site logo" />
-              </Link>
-            </Grid>
-            <Grid item>
-              <Hidden xsDown>
-                <Typography align="left" variant={"h6"}>
-                  <Link
-                    className="site-title"
-                    to="/"
-                    style={{
-                      color: `black`,
-                      fontWeight: "bold",
-                      textDecoration: `none`,
-                    }}
-                  >
-                    {siteTitle}
-                  </Link>
-                </Typography>
-              </Hidden>
-            </Grid>
+        <Grid container direction="row" alignItems="center" spacing={2}>
+          <Grid item>
+            <Link to="/">
+              <img src={logo} width="50" alt="site logo" />
+            </Link>
           </Grid>
-        </Grid>
-        <Grid item>
-          <Grid container direction="row" spacing={2}>
-            <Grid item>
-              <Typography align="center" variant={"body2"}>
+          <Grid item>
+            <Hidden xsDown>
+              <Typography align="left" variant={"h6"}>
                 <Link
-                  className="site-menu"
-                  to="/about"
+                  className="site-title"
+                  to="/"
                   style={{
                     color: `black`,
+                    fontWeight: "bold",
                     textDecoration: `none`,
-                    // padding: "1rem",
                   }}
                 >
-                  About
+                  {siteTitle}
                 </Link>
               </Typography>
-            </Grid>
-            <Grid item xs>
-              <Typography align="center" variant={"body2"}>
-                <a
-                  className="site-menu"
-                  href="https://qwerqy.dev"
-                  style={{
-                    color: `black`,
-                    textDecoration: `none`,
-                  }}
-                  target="_blank"
-                >
-                  Blog
-                </a>
-              </Typography>
-            </Grid>
+            </Hidden>
           </Grid>
         </Grid>
-      </Grid>
+
+        <Grid
+          container
+          direction="row"
+          alignItems="center"
+          justify="flex-end"
+          spacing={2}
+        >
+          <Grid item>
+            <Typography align="center" variant={"body2"}>
+              <Link
+                className="site-menu"
+                to="/about"
+                style={{
+                  color: `black`,
+                  textDecoration: `none`,
+                  // padding: "1rem",
+                }}
+              >
+                About
+              </Link>
+            </Typography>
+          </Grid>
+          <Grid item>
+            <Typography align="center" variant={"body2"}>
+              <a
+                className="site-menu"
+                href="https://qwerqy.dev"
+                style={{
+                  color: `black`,
+                  textDecoration: `none`,
+                }}
+                target="_blank"
+              >
+                Blog
+              </a>
+            </Typography>
+          </Grid>
+        </Grid>
+      </div>
     </div>
   </header>
 )
