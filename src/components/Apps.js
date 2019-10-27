@@ -7,7 +7,7 @@ const projects = [
     secondary: "A Discord bot with an interface web app built with React",
     url: "https://staging.turbot.wtf/",
     thumbnail:
-      "https://image.thum.io/get/width/200/https://develop.d2bfghe754xkas.amplifyapp.com/",
+      "https://image.thum.io/get/width/200/https://staging.turbot.wtf/",
   },
   {
     title: "Kountr",
