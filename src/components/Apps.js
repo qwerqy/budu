@@ -3,11 +3,10 @@ import MainList from "./main_list"
 
 const projects = [
   {
-    title: "Turbot (Staging)",
-    secondary: "A Discord bot with an interface web app built with React",
-    url: "https://staging.turbot.wtf/",
-    thumbnail:
-      "https://image.thum.io/get/width/200/https://staging.turbot.wtf/",
+    title: "Turbot (Alpha)",
+    secondary: "A Discord bot with an interface web app.",
+    url: "https://alpha.turbot.wtf/",
+    thumbnail: "https://image.thum.io/get/width/200/https://alpha.turbot.wtf/",
   },
   {
     title: "Kountr",
