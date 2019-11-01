@@ -85,7 +85,7 @@ const Header = ({ siteTitle }) => (
                 }}
                 target="_blank"
               >
-                <Tukang />
+                Tukang Dev
               </a>
             </Typography>
           </Grid>
