@@ -18,6 +18,7 @@ const acceptedProjects = [
   "thoughtlog",
   "basiccalculator",
   "discord-cognito-openid-wrapper",
+  "tukang.dev",
 ]
 
 const OSP = () => {

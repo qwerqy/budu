@@ -5,6 +5,7 @@ import Typography from "@material-ui/core/Typography"
 import Grid from "@material-ui/core/Grid"
 import logo from "../static/logo.png"
 import { Hidden } from "@material-ui/core"
+import Tukang from "./Logo"
 const Header = ({ siteTitle }) => (
   <header
     style={{
@@ -77,14 +78,14 @@ const Header = ({ siteTitle }) => (
             <Typography align="center" variant={"body2"}>
               <a
                 className="site-menu"
-                href="https://qwerqy.dev"
+                href="https://tukang.dev"
                 style={{
                   color: `black`,
                   textDecoration: `none`,
                 }}
                 target="_blank"
               >
-                Blog
+                <Tukang />
               </a>
             </Typography>
           </Grid>
