@@ -5,7 +5,7 @@ import Typography from "@material-ui/core/Typography"
 import Grid from "@material-ui/core/Grid"
 import logo from "../static/logo.png"
 import { Hidden } from "@material-ui/core"
-import Tukang from "./Logo"
+import SocialLink from "./social_link"
 const Header = ({ siteTitle }) => (
   <header
     style={{
@@ -30,10 +30,10 @@ const Header = ({ siteTitle }) => (
         <Grid container direction="row" alignItems="center" spacing={2}>
           <Grid item>
             <Link to="/">
-              <img src={logo} width="50" alt="site logo" />
+              <img src={logo} width="30" alt="site logo" />
             </Link>
           </Grid>
-          <Grid item>
+          {/* <Grid item>
             <Hidden xsDown>
               <Typography align="left" variant={"h6"}>
                 <Link
@@ -49,10 +49,10 @@ const Header = ({ siteTitle }) => (
                 </Link>
               </Typography>
             </Hidden>
-          </Grid>
+          </Grid> */}
         </Grid>
 
-        <Grid
+        {/* <Grid
           container
           direction="row"
           alignItems="center"
@@ -88,8 +88,9 @@ const Header = ({ siteTitle }) => (
                 Tukang Dev
               </a>
             </Typography>
-          </Grid>
-        </Grid>
+          </Grid> */}
+        {/* </Grid> */}
+        <SocialLink />
       </div>
     </div>
   </header>

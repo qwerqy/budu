@@ -33,7 +33,7 @@ const IndexPage = () => (
   <Layout>
     <SEO title="Home" />
     <Jumbo />
-    <Social />
+    <br />
     <Apps />
     <OSP />
     <MainList title="Speaking" list={speakingList} />

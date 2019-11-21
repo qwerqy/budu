@@ -37,7 +37,6 @@ const MainList = props => {
                     <img
                       src={item.thumbnail}
                       width={props.width === "xs" ? "100" : "200"}
-                      style={{ borderRadius: "15%" }}
                     />
                   </ListItemAvatar>
                 )}
