@@ -1,5 +1,5 @@
 html {
-  font-family: sans-serif;
+  font-family: "Roboto:400", sans-serif;
   -ms-text-size-adjust: 100%;
   -webkit-text-size-adjust: 100%;
 }
@@ -39,7 +39,7 @@ progress {
 template {
   display: none;
 }
-a:not(.site-title):not(.site-menu):not(.footer-item):not(.live-button) {
+a:not(.site-title):not(.site-menu):not(.footer-item):not(.live-button):not(.social-icon) {
   background-color: transparent;
   -webkit-text-decoration-skip: objects;
   color: #2196f3 !important;
@@ -630,4 +630,8 @@ footer {
   width: 100vw;
   overflow: hidden;
   padding-bottom: 1rem;
+}
+
+.social-icon {
+  color: black !important;
 }
